@@ -1,0 +1,44 @@
+h2 {
+  font-size: 50px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.valores {
+  display: flex;
+  padding-top: 80px;
+  padding-right: 120px;
+  padding-left: 120px;
+  align-items: center;
+  justify-content: center;
+}
+
+.valor {
+  margin-right: 80px;
+}
+
+.valor:last-child{
+  margin-right: 0px;
+}
+
+.valor > img{
+  width: 70px;
+  height: 70px;
+  margin-bottom: 15px;
+}
+
+
+.valor> .titulito {
+  font-size: 28px;
+  font-weight: bolder;
+  color: #FF9D0A;
+}
+
+.valor > p.descripcion{
+  font-size: 15px;
+  color: #4D4D4D;
+}
+
+.valor > p.descripcion {
+  width: 310px;
+}
