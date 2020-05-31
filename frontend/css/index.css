@@ -1,4 +1,10 @@
 /* JOSE */
+
+header {
+  position: relative;
+  z-index: 3;
+  background-color: #f7f7f7;
+}
 .headerhome {
   display: flex;
   align-items: center;
@@ -418,6 +424,8 @@ img {
   height: 800px;
   margin-top: -35px;
   height: 95vh;
+  background-color: #f7f7f7;
+  z-index: 0;
 }
 .buscador-img {
   width: 100%;
