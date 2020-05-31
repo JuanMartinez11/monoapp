@@ -77,3 +77,21 @@ img {
   color: #00BA74;
   opacity: 1;
 }
+
+.banner {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.img-banner {
+  width: 1349px;
+  margin: 0 auto;
+}
+
+.texto-encima {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
