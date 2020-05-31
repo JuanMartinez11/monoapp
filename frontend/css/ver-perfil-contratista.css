@@ -1,3 +1,10 @@
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
 .headerhome {
   display: flex;
   align-items: center;
@@ -5,13 +12,13 @@
   box-shadow: 0px 3px 37px #00000060;
 }
 
-img {
+/* img {
   top: 45px;
   left: 540px;
   width: 240px;
   opacity: 1;
   margin: 5px 0 0 80px;
-}
+} */
 
 .navbar-light .navbar-nav .active>.nav-link {
   color: #5D5D5D;
@@ -36,6 +43,14 @@ img {
   position: relative;
 }
 
+.navbar-brand > img {
+  padding-left: 70px;
+}
+
+.navbar-nav {
+  margin-right: 50px;
+}
+
 .nav-item1 {
   display: inline;
 }
@@ -45,12 +60,16 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 80px 0 0;
+  padding: 20px 10px 0 0;
 }
 
 .navbar1 {
   list-style: none;
   display: inline;
+}
+
+.img-perfil {
+  width: 55px;
 }
 
 .nav-link1 {
@@ -77,4 +96,349 @@ img {
   letter-spacing: 0px;
   color: #00BA74;
   opacity: 1;
+}
+
+.volver-atras {
+  margin-left: 170px;
+  margin-right: 170px;
+}
+
+.volver-atras > a {
+  font-size: 14px;
+  color: #4D4D4D;
+  text-decoration: underline;
+}
+
+.container {
+  margin-bottom: 180px;
+}
+
+.row {
+  box-shadow: 4px 3px 10px #00000029;
+  margin-top: 30px;
+  margin-right: 100px;
+  margin-left: 20px;
+}
+
+.col-8 {
+  padding-top: 70px;
+  padding-left: 60px;
+}
+
+.col-4 {
+  padding: 0;
+}
+
+
+.jacinto-perez {
+  display: flex;
+  align-items: flex-start;
+}
+
+.nombre-jacinto {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  line-height: 10px;
+}
+
+
+.nombre-jacinto > img {
+  margin-right: 20px;
+  width: 30px;
+  margin-top: 10px;
+}
+
+.img > .icono-linkedin {
+  width: 40px;
+}
+
+
+.icono-linkedin {
+  width: 30px;
+}
+
+.mecanico > p {
+  font-size: 20px;
+  color: #6C6C6C;
+}
+
+.sobre-mi {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+
+.sobre-mi > p:first-child {
+  font-size: 18px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.p-sobre-mi {
+  color: #646464;
+  font-size: 13px;
+}
+
+.tags {
+  margin-left: 20px;
+}
+
+.tags > p {
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.lista-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-tags {
+  color: #5F5F5F;
+  font-size: 15px;
+  border-radius: 10px;
+  border-style: none;
+  padding: 5px 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.servicios {
+  margin-left: 20px;
+}
+
+.servicios > p:first-child {
+  font-size: 18px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.servicios > p {
+  font-size: 15px;
+  color: #000000;
+  font-weight: 600;
+}
+
+.servicios > p > span {
+  color: #919191;
+}
+
+.calificaciones {
+  margin-left: 20px;
+}
+
+.calificaciones > p:first-child {
+  font-size: 18px;
+  color: #000000;
+  font-weight: bold;
+}
+
+
+
+.nombre-camila {
+  text-align: center;
+  font-size: 18px;
+  color: #000000;
+  font-weight: bold;
+}
+
+
+.camila-valencia {
+  width: 85px;
+  display: block;
+  margin: 0 auto;
+}
+
+.cinco-estrellitas {
+  display: block;
+  margin: 0 auto;
+}
+
+.carrusel-calificaciones {
+  display: flex;
+}
+
+.carrusel-calificaciones > p {
+  font-size: 13px;
+  padding: 17px;
+}
+
+.curriculum {
+  font-size: 18px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.input-descargar {
+  color: #5D5D5D;
+  font-family: roboto;
+  font-size: 14px;
+  padding: 8px 32px;
+  background-color: white;
+  border: 1px solid #989898;
+  border-radius: 5px;
+  font-weight: 500;
+  margin-bottom: 120px;
+}
+
+.flecha-carrusel {
+  width: 30px;
+}
+
+.info-general {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+  line-height: 8px;
+}
+
+.detalles {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 90px;
+  line-height: 8px;
+}
+
+.contratar {
+  background-color: #F5F5F5;
+  height: 100%;
+}
+
+.boton_contratar {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: #FF9D0A;
+  border-style: none;
+  border-radius: 30px;
+  padding: 10px 75px;
+  margin-top: 95px;
+  margin-bottom: 25px;
+}
+
+.contratar > p {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.general-1 > p {
+  font-size: 13px;
+}
+
+
+.general-2 > p {
+  font-size: 13px;
+}
+
+.detalles-1 > p {
+  font-size: 13px;
+}
+
+.detalles-2 > p {
+  font-size: 13px;
+}
+
+.valor-hora-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 195px;
+  background-color: #DEDEDE;
+}
+
+.valor-hora-div > p {
+  line-height: 15px;
+  text-align: center;
+}
+
+.p-valor-hora {
+  color: #000000;
+  font-size: 16px;
+}
+
+.p-cop {
+  color: #00BA74;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.div-enviar-mensaje {
+  position: relative;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.mensajito {
+  width: 20px;
+}
+
+.enviar-mensaje {
+  color: #919191;
+  font-size: 17px;
+  border: 1px solid #919191;
+  border-radius: 33px;
+  padding: 7px 30px;
+}
+
+
+
+
+
+
+
+.foot {
+  width: 100%;
+  height: 330px;
+  background: #000000 0% 0% no-repeat padding-box;
+  opacity: 1;
+
+  /* border: solid 1px red; */
+}
+
+.container-foot {
+  color: #9f9f9f;
+  margin: 50px 0 20px 0;
+}
+
+.foot > p {
+  padding-left: 80px;
+  font: Regular 20px/31px Open Sans;
+  letter-spacing: 0px;
+  color: #9f9f9f;
+  opacity: 1;
+}
+
+.container-footer-menu {
+  height: fit-content;
+}
+.container-footer-iconos {
+  height: fit-content;
+}
+
+.container-footer-menu a {
+  color: #fff;
+}
+
+.media {
+  display: flex;
+  width: 70px;
+  margin-left: 82px;
+  justify-content: space-between;
+  color: #9f9f9f;
+  opacity: 1;
+}
+
+.foot > h6 {
+  height: 40px;
+  padding-top: 15px;
+  text-align: center;
+  border-top: solid white 1px;
+  color: #9f9f9f;
+  opacity: 1;
+  margin-top: 60px;
+  font: Regular 22px/35px Open Sans;
+  letter-spacing: 0px;
 }
