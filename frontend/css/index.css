@@ -417,6 +417,7 @@ img {
   position: relative;
   height: 800px;
   margin-top: -35px;
+  height: 95vh;
 }
 .buscador-img {
   width: 100%;
