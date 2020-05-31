@@ -193,12 +193,66 @@ img {
 .hist {
   /* border: red 1px solid; */
   display: inline-block;
+  padding: 0;
+  height: 600px;
 }
 
-.imghisto {
+.hist > img {
+  height: 480px;
   width: 100%;
-  height: 100%;
+  padding: 0;
+  margin: 50px 0 0 0;
+  /* top: 60px; */
 }
 
 .historia {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* border: red 1px solid; */
+}
+.historia > h3 {
+  width: fit-content;
+  width: 450px;
+  font-size: 48px;
+  /* border: red 1px solid; */
+  font-weight: 700;
+  text-align: center;
+  font: ExtraBold 70px/81px Muli;
+  letter-spacing: 0px;
+  color: #00ba74;
+  opacity: 1;
+  margin-top: 150px;
+  margin-left: 26%;
+}
+
+.historia > p {
+  width: 400px;
+  height: 190px;
+  text-align: left;
+  /* border: red 1px solid; */
+  font: Regular 24px/35px Open Sans;
+  letter-spacing: 0px;
+  color: #555555;
+  opacity: 1;
+  margin-left: 29%;
+  margin-top: 10px;
+}
+
+.btn1 {
+  border-radius: 19px;
+  font-weight: 600;
+  text-align: center;
+  font: ExtraBold 24px/18px Muli;
+  letter-spacing: 0px;
+  border: #ff9d0a solid 1px;
+  color: #ff9d0a !important;
+  opacity: 1;
+  /* border: red 1px solid; */
+  margin-right: 220px;
+}
+
+.btn1:hover {
+  background: #ff9d0a;
+  color: #ffffff !important;
 }
