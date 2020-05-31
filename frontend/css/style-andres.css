@@ -1,6 +1,7 @@
 .buscador {
   position: relative;
-  height: 500px;
+  height: 800px;
+  margin-top: -35px;
 }
 .buscador-img {
   width: 100%;
@@ -8,12 +9,14 @@
   object-position: center;
   height: 90vh;
   z-index: -5;
+  margin: 0;
   position: absolute;
+  left: 0;
 }
 .buscar-contendor {
   font-family: "Muli", sans-serif;
   text-align: center;
-  padding-top: 120px;
+  padding-top: 230px;
   color: white;
 }
 
