@@ -13,32 +13,41 @@
       href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/normalized.css" />
     <link rel="stylesheet" href="../css/registro-contratista.css" />
     <title>Registro contratista</title>
   </head>
   <body>
-    <div class= "container-fluid">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-12 col-lg-3 pl-0 pr-0">
+        <div class="col-12 col-lg-4 pl-0 pr-0">
           <section id="busca-oferta" class="busca-oferta">
-            <p>busca <br/> oferta <br/> encuentra</p>
-            <img class="cohete" src="../../recursos/Assets/cohete.svg" alt="Cohete de Registro Cliente" />
+            <p>
+              busca <br />
+              oferta <br />
+              encuentra
+            </p>
+            <img class="cohete mx-auto mb-0" src="../../recursos/Assets/cohete.svg" alt="Cohete de Registro Cliente" />
           </section>
         </div>
-        <div class="col-12 col-lg-9 pl-0 pr-0">
+        <div class="col-12 col-lg-8 pl-0 pr-0 pb-5">
           <section id="registro-cliente" class="registro-cliente">
-            <h2>Registro Contratista</h2>
-            <div id="registrate" class="registrate">
-              <p>¿Ya tienes una cuenta?</p>
-              <a href="https://example.com">Iniciar sesión</a>
-            </div>
-            <div id="avatar" class="avatar">
-              <img class="avatar-usuario" src="../../recursos/Assets/image-perfil-por-defecto.svg" alt="Avatar del usuario" />
-              <button class="sube-imagen">
-                Sube una imagen
-              </button>
+            <div class="registro-cliente-avatar mb-4">
+              <h2>Registro Contratista</h2>
+              <div id="registrate" class="registrate">
+                <p>¿Ya tienes una cuenta?</p>
+                <a href="https://example.com">Iniciar sesión</a>
+              </div>
+              <div id="avatar" class="avatar mt-4">
+                <img class="avatar-usuario" src="../../recursos/Assets/imagen-perfil-por-defecto.svg" alt="Avatar del usuario" />
+                <button class="sube-imagen mx-0 mt-4">
+                  Sube una imagen
+                </button>
+              </div>
             </div>
             <div id="form-registro" class="form-registro">
               <div id="form-registro-1" class="form-registro-1">
@@ -58,7 +67,6 @@
                 <input type="text" name="linkedin" id="" class="linkedin_input" placeholder="Linkedin.com/@Juanperez" />
 
                 <p>Descripción</p>
-
               </div>
 
               <div id="form-registro-2" class="form-registro-2">
@@ -78,8 +86,10 @@
                 <input type="text" name="instagram" id="" class="instagram_input" placeholder="instagram.com/juanperez" />
               </div>
             </div>
-            <textarea id="descripcion" name="descripcion" rows="10" cols="139" placeholder="Escribe aquí una descripción de lo que haces :D"></textarea>
-            <button class="registrarme">
+            <div class="textarea">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button class="registrarme py-2">
               Registrarme ahora
             </button>
           </section>
