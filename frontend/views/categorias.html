@@ -40,18 +40,113 @@
     </header>
 
     <section class="buscador">
-      <div class="container">
+      <div class="container px-0">
         <div class="row">
           <div class="col d-flex justify-content-center">
             <div class="categorias-lista text-center">
               Categorías
               <img src="../../recursos/Assets/Flecha-categoria.svg" alt="" />
             </div>
-            <input class="w-50 container-input" type="text" placeholder="Realiza una búsqueda rápida o utiliza los filtros" />
+            <input class="w-100 container-input" type="text" placeholder="Realiza una búsqueda rápida o utiliza los filtros" />
             <div class="img-lupa">
               <img src="../../recursos/Assets/Lupa-buscador.svg" alt="" />
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 filtros px-0">
+            <div class="bucador-monapper">BUSCADOR MONAPPER</div>
+            <div class="categorias-container-main px-4 py-5">
+              <div class="categorias-filtros">
+                <label>POR OFICIO</label>
+                <div class="dropdown">
+                  <button
+                    class="btn w-100 text-left dropdown-toggle filtro-por"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Todas las profesiones
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </div>
+              <div class="categorias-filtros">
+                <label>POR UBICACIÓN</label>
+                <div class="dropdown">
+                  <button
+                    class="btn w-100 text-left dropdown-toggle filtro-por"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Todas las ubicaciones
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </div>
+              <div class="categorias-filtros">
+                <label>POR PROYECTOS TERMINADOS</label>
+                <div class="dropdown">
+                  <button
+                    class="btn w-100 text-left dropdown-toggle filtro-por"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Por cantidad de proyectos
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </div>
+              <div class="categorias-calificacion">
+                <label>POR CALIFICACIÓN</label>
+                <div class="calificacion-container">
+                  <input type="checkbox" name="" id="" />
+                  <img src="../../recursos/Assets/5-estrellas.png" alt="" />
+                </div>
+                <div class="calificacion-container">
+                  <input type="checkbox" name="" id="" />
+                  <img src="../../recursos/Assets/4-estrellas.png" alt="" />
+                </div>
+                <div class="calificacion-container">
+                  <input type="checkbox" name="" id="" />
+                  <img src="../../recursos/Assets/3-estrellas.png" alt="" />
+                </div>
+              </div>
+              <div class="categoria-verificados">
+                <label>CONTRATISTAS VERIFICADOS</label>
+                <div class="verificados-botones">
+                  <a class="btn btn-outline-dark" href="#" role="button">SOLO VERIFICADOS</a>
+                  <a class="btn btn-outline-dark" href="#" role="button">TODOS</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-8"></div>
         </div>
       </div>
     </section>
