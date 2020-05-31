@@ -53,6 +53,7 @@ class AuthController extends Controller
         $response = array('response' => '', 'success'=>false);
         $validator = Validator::make($request->all(),  [
                 'name' => 'required|min:2',
+                'phone' => 'required',
                 'email' => 'required|email|unique:users',
                 'password' => 'required|min:8']
         );
@@ -66,6 +67,8 @@ class AuthController extends Controller
             $response = User::create([
                 'name'     => $request->name,
                 'email'    => $request->email,
+                'phone'    => $request->phone,
+                'user_type'    => $request->user_type,
                 'password' =>  bcrypt($request->password),
             ]);
             return response()->json([
