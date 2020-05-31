@@ -21,7 +21,9 @@ use Illuminate\Support\Facades\Route;
 /**
  * Customers end points
  */
-//Auth
+/**
+ * Auth
+ */
 Route::post('login', 'AuthController@login');
 Route::post('register', 'AuthController@register');
 // private routes
@@ -29,6 +31,9 @@ Route::middleware('auth:api')->group(function () {
     Route::get('logout', 'AuthController@logout')->name('logout');
 });
 
+/**
+ * customers
+ */
 //Get all customers
 // private routes
 Route::middleware('auth:api')->group(function () {
@@ -44,6 +49,10 @@ Route::middleware('auth:api')->group(function () {
     Route::delete('customers/{customer}', 'CustomersController@delete');
 });
 
+/**
+ * Staffs
+ */
+
 //Get all staff
 Route::get('/staff', 'StaffController@index');
 //Get customer
@@ -55,3 +64,16 @@ Route::put('staff/{staff}', 'StaffController@update');
 //Delete customer
 Route::delete('staff/{staff}', 'StaffController@delete');
 
+/**
+ * Services
+ */
+//Get all staff
+Route::get('/services', 'ServicesController@index');
+//Get customer
+Route::get('service/{service}', 'ServicesController@show');
+//create customer
+Route::post('service', 'ServicesController@store');
+//Update customer
+Route::put('service/{service}', 'ServicesController@update');
+//Delete customer
+Route::delete('service/{service}', 'ServicesController@delete');

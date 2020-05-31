@@ -29,7 +29,7 @@ class CustomersController extends Controller
      */
     public function show($id)
     {
-
+        return User::find($id);
     }
     /**
      * Create customer
