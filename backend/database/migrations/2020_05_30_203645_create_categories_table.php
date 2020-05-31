@@ -20,14 +20,14 @@ class CreateCategoriesTable extends Migration
             $table->timestamps();
         });
 
-        Schema::create('staff_to_categories', function (Blueprint $table) {
+        Schema::create('users_to_categories', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('staff_id');
+            $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('category_id');
 
-            $table->foreign('staff_id')
+            $table->foreign('user_id')
                 ->references('id')
-                ->on('staff')
+                ->on('users')
                 ->onDelete('cascade');
 
             $table->foreign('category_id')
@@ -47,7 +47,7 @@ class CreateCategoriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('staff_to_categories');
+        Schema::dropIfExists('users_to_categories');
 
         Schema::dropIfExists('categories');
     }
