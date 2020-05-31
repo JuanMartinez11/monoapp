@@ -54,6 +54,7 @@ class AuthController extends Controller
         $validator = Validator::make($request->all(),  [
                 'name' => 'required|min:2',
                 'phone' => 'required',
+                'user_type' => 'required',
                 'email' => 'required|email|unique:users',
                 'password' => 'required|min:8']
         );
@@ -71,6 +72,20 @@ class AuthController extends Controller
                 'user_type'    => $request->user_type,
                 'password' =>  bcrypt($request->password),
             ]);
+
+            // email data
+            $email_data = array(
+                'name' => $response['name'],
+                'email' => $response['email'],
+            );
+
+            // send email with the template
+            Mail::send('welcome_staff', $email_data, function ($message) use ($email_data) {
+                $message->to($email_data['email'], $email_data['name'])
+                    ->subject('Bienvenido a MonApp')
+                    ->from('juanbijose11@hotmail.com', 'MonApp');
+            });
+
             return response()->json([
                 'message' => 'Usuario creado satisfactoriamente'], 201);
 
