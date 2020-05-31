@@ -50,3 +50,12 @@
 .container-opciones a:hover {
   background-color: #00ba74;
 }
+
+@media screen and (max-width: 920px) {
+  .container-naranja {
+    margin-bottom: 30%;
+  }
+  .contenedor-texto {
+    margin: 50px;
+  }
+}
