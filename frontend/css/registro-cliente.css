@@ -1,18 +1,20 @@
 body {
-  background-color: #F5F7F9;
-  height: 560px;
+  background-color: #f5f7f9;
 }
 
 .busca-oferta {
-  background-color: #FF9D0A;
-  height: 560px;
+  background-color: #ff9d0a;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .busca-oferta > p {
   font-family: muli;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 800;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   line-height: initial;
   padding-top: 180px;
@@ -20,15 +22,39 @@ body {
 
 .busca-oferta > img {
   display: block;
-  margin: 0 auto;
-  width: 280px;
+  width: 100%;
   margin-top: 100px;
 }
 
-.registro-cliente {
-  margin-left: 130px;
-  margin-top: 70px;
+.cohete {
+  bottom: 0;
+  z-index: 1030;
 }
+
+.registro-cliente {
+  /*  margin-left: 130px;
+  margin-top: 70px; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+}
+
+.registro-cliente-avatar {
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* .registro-cliente-avatar button {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+} */
 
 h2 {
   font-family: muli;
@@ -37,29 +63,41 @@ h2 {
 }
 
 .registrate {
-  display: flex
+  display: flex;
 }
 
 .registrate > p {
   font-size: 11.5px;
-  color: #4D4D4D;
+  color: #4d4d4d;
   margin-right: 5px;
 }
 
 .registrate > a {
-  color: #007C89;
+  color: #007c89;
   text-decoration: underline;
   font-weight: 700;
   font-size: 11.5px;
 }
 
+.avatar {
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.avatar-usuario {
+  width: 50%;
+}
+
 .avatar > button {
-  background-color: #00BA74;
+  background-color: #00ba74;
   border-radius: 20px;
   width: 100px;
   height: 20px;
   font-size: 10px;
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
   display: block;
   margin-bottom: 25px;
@@ -71,7 +109,7 @@ h2 {
 }
 
 .form-registro > div > p {
-  color:#4D4D4D;
+  color: #4d4d4d;
   font-weight: 700;
   margin-left: 5px;
   margin-bottom: 10px;
@@ -82,8 +120,8 @@ h2 {
   width: 350px;
   height: 37px;
   margin-bottom: 10px;
-  color: #B4B4B4;
-  border: 1px solid #B4B4B4;
+  color: #b4b4b4;
+  border: 1px solid #b4b4b4;
   border-radius: 5px;
   padding-left: 10px;
 }
@@ -100,18 +138,18 @@ h2 {
 .registrarme {
   margin-top: 20px;
   font-family: roboto;
-  background-color: #FF9D0A;
+  background-color: #ff9d0a;
   border-radius: 28px;
   width: 725px;
   height: 40px;
   font-size: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
   display: block;
 }
 
 .registrarme:hover {
-  background-color: white;
-  border: 1px solid #FF9D0A;
-  color: #FF9D0A;
+  background-color: #00ba74;
+  border: 1px solid #00ba74;
+  color: #fff;
 }
