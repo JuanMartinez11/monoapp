@@ -21,6 +21,13 @@ use Illuminate\Support\Facades\Route;
 /**
  * Customers end poins
  */
+//Auth
+Route::post('login', 'AuthController@login');
+Route::post('register', 'AuthController@register');
+// private routes
+Route::middleware('auth:api')->group(function () {
+    Route::get('logout', 'AuthController@logout')->name('logout');
+});
 //Get all customers
 Route::get('/customers', 'CustomersController@index');
 //Get customer
