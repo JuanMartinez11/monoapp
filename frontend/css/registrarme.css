@@ -1,0 +1,52 @@
+.container-naranja {
+  background-color: #ff9d0a;
+  height: 100vh;
+}
+
+.contenedor-texto {
+  margin: 40% 0;
+}
+
+.container-naranja .img-fluid {
+  position: absolute;
+  bottom: 0;
+}
+
+.container-naranja h3 {
+  color: #fff;
+  font-family: "Muli", sans-serif;
+  font-weight: 800;
+  font-size: 3em;
+}
+
+.container-logo-copy img {
+  margin-bottom: 60px;
+}
+
+.container-logo-copy P {
+  color: #888888;
+}
+
+.container-opciones {
+  margin-top: 80px;
+}
+
+.container-opciones p {
+  font-family: "Muli", sans-serif;
+  color: #6c6c6c;
+  font-weight: 800;
+  font-size: 1.1em;
+}
+.container-opciones a {
+  font-family: "Muli", sans-serif;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1em;
+  padding: 35px 60px;
+  border-radius: 10px;
+  background-color: #ff9d0a;
+}
+
+.container-opciones a:hover {
+  background-color: #00ba74;
+}
