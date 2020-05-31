@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Customers;
+use Illuminate\Support\Facades\Mail;
 use Validator;
 use Hash;
 
@@ -59,6 +60,19 @@ class CustomersController extends Controller
                 'phone'    => $request->phone,
                 'password' => Hash::make($request->password),
             ]);
+
+            // email data
+            $email_data = array(
+                'name' => $response['name'],
+                'email' => $response['email'],
+            );
+
+            // Send email register
+            Mail::send('welcome_customer', $email_data, function ($message) use ($email_data) {
+                $message->to($email_data['email'], $email_data['name'])
+                    ->subject('Bienvenido a MonAPP')
+                    ->from('juanbijose11@hotmail.com', 'MonAPP');
+            });
         }
         return $response;
     }

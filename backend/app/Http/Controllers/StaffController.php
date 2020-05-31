@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Staff;
 use Validator;
 use Hash;
+use Illuminate\Support\Facades\Mail;
 
 class StaffController extends Controller
 {
@@ -60,6 +61,20 @@ class StaffController extends Controller
                 'industry'    => $request->industry,
                 'password' => Hash::make($request->password),
             ]);
+
+            // email data
+            $email_data = array(
+                'name' => $response['name'],
+                'email' => $response['email'],
+            );
+
+            // Send email register
+            Mail::send('welcome_staff', $email_data, function ($message) use ($email_data) {
+                $message->to($email_data['email'], $email_data['name'])
+                    ->subject('Bienvenido a MonAPP')
+                    ->from('juanbijose11@hotmail.com', 'MonAPP');
+            });
+
         }
         return $response;
     }
