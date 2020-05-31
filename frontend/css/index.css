@@ -507,10 +507,11 @@ h2 {
   margin-right: 0px;
 }
 
-.valor > img {
+.valor img {
   width: 70px;
   height: 70px;
   margin-bottom: 15px;
+  margin: 0 0 15px 0;
 }
 
 .valor > .titulito {
