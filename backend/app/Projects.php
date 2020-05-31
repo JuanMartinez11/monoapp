@@ -4,8 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Staff extends Model
+class Projects extends Model
 {
     //
-    protected $fillable = [];
 }
