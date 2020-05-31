@@ -71,3 +71,134 @@ img {
   color: #00ba74;
   opacity: 1;
 }
+
+/* seccion 2  */
+
+/* seccion 3 */
+
+.perfil {
+  width: 100%;
+  height: 550px;
+  /* border: red 1px solid; */
+  background: #00ba74 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.carousel-item {
+  /* border: red 1px solid; */
+  margin-top: 80px;
+}
+
+.carousel-item > img {
+  width: 171px;
+  height: 171px;
+  /* border: red 1px solid; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+/* descripción del perfil */
+.desper {
+  width: 700px;
+  height: 207px;
+  /* border: red 1px solid; */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+.desper > img {
+  width: 221px;
+  height: 36px;
+  opacity: 1;
+  display: flex;
+  bottom: 10px;
+  top: 10px;
+  margin: auto;
+
+  /* border: red 1px solid; */
+}
+
+.desper > h4 {
+  font-size: 30px;
+  text-align: center;
+  font: ExtraBold 48px/81px Muli;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  margin-top: 22px;
+}
+
+.desper > p {
+  font: ExtraBold 48px/81px Muli;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  margin-top: 20px;
+}
+
+/* seccion 4  se algo*/
+
+.sealgo {
+  width: 100%;
+  height: 327px;
+  background: #f7f7f7 0% 0% no-repeat padding-box;
+  opacity: 1;
+  /* border: red 1px solid; */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  padding: 60px;
+}
+
+.sealgo > h3 {
+  font-weight: 700;
+  padding-bottom: 29px;
+  /* border: red 1px solid; */
+}
+
+.sealgo > p {
+  font-size: 18px;
+  text-align: center;
+  font: Regular 24px/35px Open Sans;
+  letter-spacing: 0px;
+  color: #747474;
+  opacity: 1;
+  padding-bottom: 30px;
+}
+
+.btn {
+  width: 144px;
+  border-radius: 19px;
+  font-weight: 600;
+  text-align: center;
+  font: ExtraBold 24px/18px Muli;
+  letter-spacing: 0px;
+  border: #ff9d0a solid 1px;
+  color: #ff9d0a !important;
+  opacity: 1;
+  /* border: red 1px solid; */
+}
+
+.btn:hover {
+  background: #ff9d0a;
+  color: #ffffff !important;
+}
+
+/* seccion 5  historias*/
+.hist {
+  /* border: red 1px solid; */
+  display: inline-block;
+}
+
+.imghisto {
+  width: 100%;
+  height: 100%;
+}
+
+.historia {
+}
