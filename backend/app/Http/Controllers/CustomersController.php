@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Customers;
 use Validator;
+use Hash;
 
 class CustomersController extends Controller
 {
@@ -40,15 +41,24 @@ class CustomersController extends Controller
         //Validate data
         $response = array('response' => '', 'success'=>false);
         $validator = Validator::make($request->all(),  [
-            'name' => 'required',
-            'password' => 'required|min:5']
+            'name' => 'required|min:2',
+            'phone' => 'required|min:10|unique:customers',
+            'email' => 'required|email|unique:customers',
+            'password' => 'required|min:8']
         );
+
         //Response fails
         if ($validator->fails()) {
             $response['response'] = $validator->messages();
         }else{
             //Create customer
-            $response = Customers::create($request->all());
+
+            $response = Customers::create([
+                'name'     => $request->name,
+                'email'    => $request->email,
+                'phone'    => $request->phone,
+                'password' => Hash::make($request->password),
+            ]);
         }
         return $response;
     }
