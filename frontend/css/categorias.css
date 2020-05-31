@@ -1,0 +1,26 @@
+.d-lg-flex {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-header {
+  height: 120px;
+  margin: 0 auto;
+}
+
+.container-header .logo {
+  height: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.container-header a {
+  font: Medium 21px/28px Roboto;
+  color: #5d5d5d;
+  font-weight: 500;
+  font-size: 21px;
+}
+
+.container-header .foto-perfil {
+  height: 70px;
+}
