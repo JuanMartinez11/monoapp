@@ -1,0 +1,116 @@
+body {
+  background-color: #F7F7F7;
+}
+
+.iniciar-sesion {
+  text-align: center;
+}
+
+.grafico-ini-sec {
+  margin-bottom: 100px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.registrarse {
+  display: flex;
+  justify-content: center;
+  margin-right: 90px;
+}
+
+.registrarse > p {
+  color:#4D4D4D;
+  font-size: 14px;
+  margin-right: 12px;
+}
+
+.registrarse > a {
+  color: #007C89;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+.form-inicio > p {
+  font-size: 14px;
+  color: #4D4D4D;
+  font-weight: bold;
+  margin-right: 280px;
+  margin-bottom: 8px;
+}
+
+.form-inicio > p.contrasena {
+  margin-right: 255px;
+}
+
+.form-inicio > input {
+  font-size: 12px;
+  width: 350px;
+  height: 37px;
+  margin-bottom: 10px;
+  color: #B4B4B4;
+  border: 1px solid #B4B4B4;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.form-inicio > input::placeholder {
+  font-style: oblique;
+  opacity: 0.6;
+}
+
+.boton-inicio-sesion > button {
+  background-color: #FF9D0A;
+  border-radius: 30px;
+  width: 350px;
+  height: 40px;
+  font-size: 16px;
+  color: #FFFFFF;
+  border: none;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 3px;
+}
+
+.boton-inicio-sesion > button:hover{
+  background-color: white;
+  border: 1px solid #FF9D0A;
+  color: #FF9D0A;
+}
+
+.boton-inicio-sesion > a {
+  font-size: 10px;
+  color: #4D4D4D;
+  text-decoration: underline;
+}
+
+/* Sección 2 */
+
+.hola {
+  background-color: #00BA74;
+}
+
+.hola > p:first-child {
+  font-size: 90px;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-align: center;
+}
+
+.hola > p {
+  font-size: 16px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.hola > img {
+  width: 500px;
+  display: block;
+  margin: auto;
+}
