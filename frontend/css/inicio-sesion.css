@@ -94,6 +94,9 @@ h2 {
 .hola {
   background-color: #00ba74;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .hola > p:first-child {
@@ -116,8 +119,6 @@ h2 {
 }
 
 .cohete-ini-sec {
-  position: fixed;
-  right: 220px;
   bottom: 0;
   z-index: 1030;
 }
