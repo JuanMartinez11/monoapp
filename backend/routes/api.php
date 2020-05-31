@@ -19,18 +19,39 @@ use Illuminate\Support\Facades\Route;
 });*/
 
 /**
- * Customers end poins
+ * Customers end points
+ */
+/**
+ * Auth
+ */
+Route::post('login', 'AuthController@login');
+Route::post('register', 'AuthController@register');
+// private routes
+Route::middleware('auth:api')->group(function () {
+    Route::get('logout', 'AuthController@logout')->name('logout');
+});
+
+/**
+ * customers
  */
 //Get all customers
-Route::get('/customers', 'CustomersController@index');
-//Get customer
-Route::get('customers/{customer}', 'CustomersController@show');
-//create customer
-Route::post('customers', 'CustomersController@store');
-//Update customer
-Route::put('customers/{customer}', 'CustomersController@update');
-//Delete customer
-Route::delete('customers/{customer}', 'CustomersController@delete');
+// private routes
+Route::middleware('auth:api')->group(function () {
+
+    Route::get('/customers', 'CustomersController@index');
+    //Get customer
+    Route::get('customers/{customer}', 'CustomersController@show');
+    //create customer
+    Route::post('customers', 'CustomersController@store');
+    //Update customer
+    Route::put('customers/{customer}', 'CustomersController@update');
+    //Delete customer
+    Route::delete('customers/{customer}', 'CustomersController@delete');
+});
+
+/**
+ * Staffs
+ */
 
 //Get all staff
 Route::get('/staff', 'StaffController@index');
@@ -42,3 +63,17 @@ Route::post('staff', 'StaffController@store');
 Route::put('staff/{staff}', 'StaffController@update');
 //Delete customer
 Route::delete('staff/{staff}', 'StaffController@delete');
+
+/**
+ * Services
+ */
+//Get all staff
+Route::get('/services', 'ServicesController@index');
+//Get customer
+Route::get('service/{service}', 'ServicesController@show');
+//create customer
+Route::post('service', 'ServicesController@store');
+//Update customer
+Route::put('service/{service}', 'ServicesController@update');
+//Delete customer
+Route::delete('service/{service}', 'ServicesController@delete');

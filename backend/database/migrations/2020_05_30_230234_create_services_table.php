@@ -17,7 +17,7 @@ class CreateServicesTable extends Migration
             $table->id();
             $table->string('name');
             $table->float('price');
-            $table->float('sale_price');
+            $table->float('sale_price')->nullable();
             $table->string('description');
             $table->timestamps();
         });
