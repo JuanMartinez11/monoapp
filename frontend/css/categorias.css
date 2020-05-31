@@ -1,10 +1,13 @@
+header {
+  box-shadow: 0px 3px 37px #00000060;
+}
 .d-lg-flex {
   justify-content: space-between;
   align-items: center;
 }
 
 .container-header {
-  height: 120px;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -23,4 +26,48 @@
 
 .container-header .foto-perfil {
   height: 70px;
+}
+
+.buscador {
+  margin-top: 60px;
+}
+
+.categorias-lista {
+  width: 300px;
+  border-radius: 10px 0px 0px 10px;
+  background-color: #3fb98b;
+  font: Medium 21px/28px Roboto;
+  font-size: 1.2em;
+  color: #fff;
+  padding: 15px;
+}
+
+.categorias-lista img {
+  position: relative;
+  left: 50px;
+}
+
+.container-input {
+  border-style: none;
+  background-color: #eaeaea;
+  padding-left: 25px;
+}
+
+.container-input::placeholder {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: oblique;
+  opacity: 0.5;
+}
+
+.img-lupa {
+  background-color: #ff9d0a;
+  width: 80px;
+  height: 60px;
+  padding: 10px 10px 10px 20px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.img-lupa img {
+  margin: 0;
+  padding: 0;
 }
