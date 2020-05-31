@@ -1,0 +1,93 @@
+body {
+  background-color: #F5F7F9;
+}
+
+.busca-oferta {
+  background-color: #FF9D0A;
+  height: 1080px;
+}
+
+.busca-oferta > p {
+  font-family: muli;
+  font-size: 30px;
+  font-weight: 800;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: initial;
+  padding-top: 160px;
+  padding-bottom: 40px;
+}
+
+.busca-oferta > img {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.registro-cliente {
+  margin-left: 100px;
+  margin-top: 70px;
+}
+
+h2 {
+  font-family: muli;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.registrate > p {
+  font-size: 11.5px;
+  color: #4D4D4D;
+}
+
+.registrate > a {
+  color: #007C89;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.avatar > button {
+  background-color: #00BA74;
+  border-radius: 20px;
+  width: 100px;
+  height: 20px;
+  font-size: 10px;
+  color: #FFFFFF;
+  border: none;
+  display: block;
+}
+
+
+.form-registro > p {
+  color:#4D4D4D;
+  font-weight: 700;
+}
+
+.form-registro > input {
+  font-size: 12px;
+  width: 350px;
+  height: 37px;
+  margin-bottom: 10px;
+  color: #B4B4B4;
+  border: 1px solid #B4B4B4;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.form-registro > input::placeholder {
+  font-style: oblique;
+  opacity: 0.6;
+}
+
+
+.registrarme {
+  font-family: roboto;
+  background-color: #FF9D0A;
+  border-radius: 28px;
+  width: 350px;
+  height: 40px;
+  font-size: 16px;
+  color: #FFFFFF;
+  border: none;
+  display: block;
+}
