@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style-jose.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalized.css" />
+    <link rel="stylesheet" href="../css/categorias.css" />
+    <title>Categorías</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid pl-5 pr-5 pt-4 container-header">
+        <div class="col d-md-block d-lg-flex text-center">
+          <img src="../../recursos/Assets/logo-monapp.png" alt="logo monapp" class="img-fluid logo" />
+          <ul class="nav d-block d-sm-block d-lg-flex">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Preguntas frecuentes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contáctanos</a>
+            </li>
+          </ul>
+          <img src="../../recursos/Assets/imagen-perfil.jpg" alt="" class="img-fluid foto-perfil" />
+        </div>
+      </div>
+    </header>
+
+    <section class="buscador">
+      <div class="container px-0">
+        <div class="row">
+          <div class="col d-flex justify-content-center">
+            <div class="categorias-lista text-center">
+              Categorías
+              <img src="../../recursos/Assets/Flecha-categoria.svg" alt="" />
+            </div>
+            <input class="w-100 container-input" type="text" placeholder="Realiza una búsqueda rápida o utiliza los filtros" />
+            <div class="img-lupa">
+              <img src="../../recursos/Assets/Lupa-buscador.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 filtros px-0">
+            <div class="bucador-monapper">BUSCADOR MONAPPER</div>
+            <div class="categorias-container-main px-4 py-5">
+              <div class="categorias-filtros">
+                <label>POR OFICIO</label>
+                <div class="dropdown">
+                  <button
+                    class="btn w-100 text-left dropdown-toggle filtro-por"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Todas las profesiones
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </div>
+              <div class="categorias-filtros">
+                <label>POR UBICACIÓN</label>
+                <div class="dropdown">
+                  <button
+                    class="btn w-100 text-left dropdown-toggle filtro-por"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Todas las ubicaciones
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </div>
+              <div class="categorias-filtros">
+                <label>POR PROYECTOS TERMINADOS</label>
+                <div class="dropdown">
+                  <button
+                    class="btn w-100 text-left dropdown-toggle filtro-por"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Por cantidad de proyectos
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </div>
+              <div class="categorias-calificacion">
+                <label>POR CALIFICACIÓN</label>
+                <div class="calificacion-container">
+                  <input type="checkbox" name="" id="" />
+                  <img src="../../recursos/Assets/5-estrellas.png" alt="" />
+                </div>
+                <div class="calificacion-container">
+                  <input type="checkbox" name="" id="" />
+                  <img src="../../recursos/Assets/4-estrellas.png" alt="" />
+                </div>
+                <div class="calificacion-container">
+                  <input type="checkbox" name="" id="" />
+                  <img src="../../recursos/Assets/3-estrellas.png" alt="" />
+                </div>
+              </div>
+              <div class="categoria-verificados">
+                <label>CONTRATISTAS VERIFICADOS</label>
+                <div class="verificados-botones">
+                  <a class="btn btn-outline-dark" href="#" role="button">SOLO VERIFICADOS</a>
+                  <a class="btn btn-outline-dark" href="#" role="button">TODOS</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-8">
+            <div class="row container-main-info-perfil">
+              <div class="col-8 w-75">
+                <div class="container-nombre">
+                  <img src="../../recursos/Assets/Perfil-1.png" alt="" />
+                  <div class="nombre-profesion">
+                    <h3>Juan Camilo Arroyave</h3>
+                    <p>Carpintero</p>
+                    <img src="../../recursos/Assets/5-estrellas.png" alt="" />
+                  </div>
+                </div>
+                <div class="container-descripcion-perfil">
+                  <p>
+                    The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog,
+                    flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex!
+                  </p>
+                  <div>
+                    <h4 class="badge badge-pill">Ebanista</h4>
+                    <h4 class="badge badge-pill">Selección de maderas</h4>
+                    <h4 class="badge badge-pill">Horario flexible</h4>
+                    <h4 class="badge badge-pill">Horario flexible</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 pt-4 container-info-pago">
+                <div class="container-info-pago-botones">
+                  <a href="#" class="btn btn-lg btn-contactar" tabindex="-1" role="button">Contactar</a>
+                  <a href="#" class="btn btn-lg btn-ver-perfil" tabindex="-1" role="button">Ver perfil</a>
+                </div>
+
+                <div class="container-info-pago">
+                  <p class="text-left container-info-pago-valor">Valor hora:</p>
+                  <p class="container-info-pago-numero">CO$ 23.493</p>
+                </div>
+              </div>
+            </div>
+            <div class="row container-main-info-perfil">
+              <div class="col-8 w-75">
+                <div class="container-nombre">
+                  <img src="../../recursos/Assets/Perfil-2.png" alt="" />
+                  <div class="nombre-profesion">
+                    <h3>Jacinto Pérez</h3>
+                    <p>Mesero</p>
+                    <img src="../../recursos/Assets/5-estrellas.png" alt="" />
+                  </div>
+                </div>
+                <div class="container-descripcion-perfil">
+                  <p>
+                    The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog,
+                    flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex!
+                  </p>
+                  <div>
+                    <h4 class="badge badge-pill">Ebanista</h4>
+                    <h4 class="badge badge-pill">Selección de maderas</h4>
+                    <h4 class="badge badge-pill">Horario flexible</h4>
+                    <h4 class="badge badge-pill">Horario flexible</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 pt-4 container-info-pago">
+                <div class="container-info-pago-botones">
+                  <a href="#" class="btn btn-lg btn-contactar" tabindex="-1" role="button">Contactar</a>
+                  <a href="#" class="btn btn-lg btn-ver-perfil" tabindex="-1" role="button">Ver perfil</a>
+                </div>
+
+                <div class="container-info-pago">
+                  <p class="text-left container-info-pago-valor">Valor hora:</p>
+                  <p class="container-info-pago-numero">CO$ 10.500</p>
+                </div>
+              </div>
+            </div>
+            <div class="row container-main-info-perfil">
+              <div class="col-8 w-75">
+                <div class="container-nombre">
+                  <img src="../../recursos/Assets/Perfil-3.png" alt="" />
+                  <div class="nombre-profesion">
+                    <h3>Diana Galeano</h3>
+                    <p>Manicurista</p>
+                    <img src="../../recursos/Assets/4-estrellas.png" alt="" />
+                  </div>
+                </div>
+                <div class="container-descripcion-perfil">
+                  <p>
+                    The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog,
+                    flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex!
+                  </p>
+                  <div>
+                    <h4 class="badge badge-pill">Ebanista</h4>
+                    <h4 class="badge badge-pill">Selección de maderas</h4>
+                    <h4 class="badge badge-pill">Horario flexible</h4>
+                    <h4 class="badge badge-pill">Horario flexible</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 pt-4 container-info-pago">
+                <div class="container-info-pago-botones">
+                  <a href="#" class="btn btn-lg btn-contactar" tabindex="-1" role="button">Contactar</a>
+                  <a href="#" class="btn btn-lg btn-ver-perfil" tabindex="-1" role="button">Ver perfil</a>
+                </div>
+
+                <div class="container-info-pago">
+                  <p class="text-left container-info-pago-valor">Valor hora:</p>
+                  <p class="container-info-pago-numero">CO$ 9.493</p>
+                </div>
+              </div>
+            </div>
+            <div class="row container-main-info-perfil">
+              <div class="col-8 w-75">
+                <div class="container-nombre">
+                  <img src="../../recursos/Assets/Perfil-4.png" alt="" />
+                  <div class="nombre-profesion">
+                    <h3>David Bowie</h3>
+                    <p>Operaciones terrestres</p>
+                    <img src="../../recursos/Assets/4-estrellas.png" alt="" />
+                  </div>
+                </div>
+                <div class="container-descripcion-perfil">
+                  <p>
+                    The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog,
+                    flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex!
+                  </p>
+                  <div>
+                    <h4 class="badge badge-pill">Ebanista</h4>
+                    <h4 class="badge badge-pill">Selección de maderas</h4>
+                    <h4 class="badge badge-pill">Horario flexible</h4>
+                    <h4 class="badge badge-pill">Horario flexible</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 pt-4 container-info-pago">
+                <div class="container-info-pago-botones">
+                  <a href="#" class="btn btn-lg btn-contactar" tabindex="-1" role="button">Contactar</a>
+                  <a href="#" class="btn btn-lg btn-ver-perfil" tabindex="-1" role="button">Ver perfil</a>
+                </div>
+
+                <div class="container-info-pago">
+                  <p class="text-left container-info-pago-valor">Valor hora:</p>
+                  <p class="container-info-pago-numero">CO$ 29.693</p>
+                </div>
+              </div>
+            </div>
+            <div class="row container-main-info-perfil">
+              <div class="col-8 w-75">
+                <div class="container-nombre">
+                  <img src="../../recursos/Assets/Perfil-5.png" alt="" />
+                  <div class="nombre-profesion">
+                    <h3>Luz Stella Gómez</h3>
+                    <p>Costurera</p>
+                    <img src="../../recursos/Assets/4-estrellas.png" alt="" />
+                  </div>
+                </div>
+                <div class="container-descripcion-perfil">
+                  <p>
+                    The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog,
+                    flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex!
+                  </p>
+                  <div>
+                    <h4 class="badge badge-pill">Ebanista</h4>
+                    <h4 class="badge badge-pill">Selección de maderas</h4>
+                    <h4 class="badge badge-pill">Horario flexible</h4>
+                    <h4 class="badge badge-pill">Horario flexible</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 pt-4 container-info-pago">
+                <div class="container-info-pago-botones">
+                  <a href="#" class="btn btn-lg btn-contactar" tabindex="-1" role="button">Contactar</a>
+                  <a href="#" class="btn btn-lg btn-ver-perfil" tabindex="-1" role="button">Ver perfil</a>
+                </div>
+
+                <div class="container-info-pago">
+                  <p class="text-left container-info-pago-valor">Valor hora:</p>
+                  <p class="container-info-pago-numero">CO$ 8.000</p>
+                </div>
+              </div>
+            </div>
+            <div class="row container-main-info-perfil">
+              <div class="col-8 w-75">
+                <div class="container-nombre">
+                  <img src="../../recursos/Assets/Perfil-6.png" alt="" />
+                  <div class="nombre-profesion">
+                    <h3>Juliana Alaniz</h3>
+                    <p>Bioquímica</p>
+                    <img src="../../recursos/Assets/4-estrellas.png" alt="" />
+                  </div>
+                </div>
+                <div class="container-descripcion-perfil">
+                  <p>
+                    The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog,
+                    flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex!
+                  </p>
+                  <div>
+                    <h4 class="badge badge-pill">Ebanista</h4>
+                    <h4 class="badge badge-pill">Selección de maderas</h4>
+                    <h4 class="badge badge-pill">Horario flexible</h4>
+                    <h4 class="badge badge-pill">Horario flexible</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 pt-4 container-info-pago">
+                <div class="container-info-pago-botones">
+                  <a href="#" class="btn btn-lg btn-contactar" tabindex="-1" role="button">Contactar</a>
+                  <a href="#" class="btn btn-lg btn-ver-perfil" tabindex="-1" role="button">Ver perfil</a>
+                </div>
+
+                <div class="container-info-pago">
+                  <p class="text-left container-info-pago-valor">Valor hora:</p>
+                  <p class="container-info-pago-numero">CO$ 43.800</p>
+                </div>
+              </div>
+            </div>
+            <div class="row container-main-info-perfil">
+              <div class="col-8 w-75">
+                <div class="container-nombre">
+                  <img src="../../recursos/Assets/Perfil-7.png" alt="" />
+                  <div class="nombre-profesion">
+                    <h3>David Restrepo</h3>
+                    <p>Psicólogo</p>
+                    <img src="../../recursos/Assets/3-estrellas.png" alt="" />
+                  </div>
+                </div>
+                <div class="container-descripcion-perfil">
+                  <p>
+                    The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog,
+                    flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex!
+                  </p>
+                  <div>
+                    <h4 class="badge badge-pill">Ebanista</h4>
+                    <h4 class="badge badge-pill">Selección de maderas</h4>
+                    <h4 class="badge badge-pill">Horario flexible</h4>
+                    <h4 class="badge badge-pill">Horario flexible</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 pt-4 container-info-pago">
+                <div class="container-info-pago-botones">
+                  <a href="#" class="btn btn-lg btn-contactar" tabindex="-1" role="button">Contactar</a>
+                  <a href="#" class="btn btn-lg btn-ver-perfil" tabindex="-1" role="button">Ver perfil</a>
+                </div>
+
+                <div class="container-info-pago">
+                  <p class="text-left container-info-pago-valor">Valor hora:</p>
+                  <p class="container-info-pago-numero">CO$ 33.493</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
