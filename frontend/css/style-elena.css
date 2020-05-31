@@ -4,6 +4,11 @@ h2 {
   font-weight: bolder;
 }
 
+.val {
+  /* border: solid red 1px; */
+  background: #f7f7f7 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
 .valores {
   display: flex;
   padding-top: 80px;
@@ -17,26 +22,25 @@ h2 {
   margin-right: 80px;
 }
 
-.valor:last-child{
+.valor:last-child {
   margin-right: 0px;
 }
 
-.valor > img{
+.valor > img {
   width: 70px;
   height: 70px;
   margin-bottom: 15px;
 }
 
-
-.valor> .titulito {
+.valor > .titulito {
   font-size: 28px;
   font-weight: bolder;
-  color: #FF9D0A;
+  color: #ff9d0a;
 }
 
-.valor > p.descripcion{
+.valor > p.descripcion {
   font-size: 15px;
-  color: #4D4D4D;
+  color: #4d4d4d;
 }
 
 .valor > p.descripcion {
