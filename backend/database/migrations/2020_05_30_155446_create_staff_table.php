@@ -17,18 +17,18 @@ class CreateStaffTable extends Migration
         Schema::create('staff', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('description');
+            $table->string('description')->nullable();
             $table->string('phone');
-            $table->string('country');
-            $table->string('city');
-            $table->string('address');
+            $table->string('country')->nullable();
+            $table->string('city')->nullable();
+            $table->string('address')->nullable();
             $table->string('email')->unique();
-            $table->string('linkfb');
-            $table->string('linkin');
-            $table->string('linkld');
+            $table->string('linkfb')->nullable();
+            $table->string('linkin')->nullable();
+            $table->string('linkld')->nullable();
             $table->string('industry');
-            $table->string('photo_profile');
-            $table->string('photo_id');
+            $table->string('photo_profile')->nullable();
+            $table->string('photo_id')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
